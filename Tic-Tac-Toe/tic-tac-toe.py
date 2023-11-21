@@ -13,7 +13,6 @@ def cell_clicked(row, col, button):
 
     if counter % 2 == 0:
         # player turn
-        print(f"Clicked on cell ({row + 1}, {col + 1})")
         button.config(text="X", state=tk.DISABLED)
         board_values[row][col] = 'X'
         if check_winner('X'):
