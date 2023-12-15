@@ -14,18 +14,264 @@
   </head>
   <body>
     <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="/video-loop.mp4" type="video/mp4" />
+      </video>
       <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input type="checkbox" class="burger-menu__checkbox" id="menu" />
+
         <nav class="navigation">
           <ul class="navigation__list">
-            <li><a href="#" class="navigation__link">Bio</a></li>
-            <li><a href="#" class="navigation__link">Skills</a></li>
-            <li><a href="#" class="navigation__link">Media</a></li>
-            <li><a href="#" class="navigation__link">Projects</a></li>
-            <li><a href="#" class="navigation__link">My Clients</a></li>
-            <li><a href="#" class="navigation__link">Contact</a></li>
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contacts"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
       </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio-data">
+          <h1 class="bio__heading">
+            Hi There,I'M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Ahmed Medhat</span>, a Full Stack
+            Web Developer
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say HI</a>
+          <a
+            href="/Ahmed-medhat-mahmoud-CV.pdf"
+            class="bio__links find-out-link"
+            >Download CV <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="/images/portfolio1.png"
+            alt="image of ahmed medhat"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">JavaScript</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React testing library</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="h2-heading">
+          My Featured <br />
+          Projects
+        </h2>
+        <div class="projects__main">
+          <img
+            src="/images/1st challenge.png"
+            alt="projects 1"
+            class="projects__img"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Result <br />
+              Summary
+            </h3>
+            <p class="projects__description">
+              this is My First Front End Mentor Challenge
+            </p>
+            <a
+              href="https://front-end-mentor-challenges-wheat.vercel.app/"
+              target="_blank"
+              class="project__links"
+              >FrontEnd_Mentor</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Testimonials <br />
+              Grid-section
+            </h3>
+            <p class="project__description">
+              this is My First Front End Mentor Challenge
+            </p>
+            <a
+              href="https://front-end-mentor-challenges-2nd.vercel.app/"
+              target="_blank"
+              class="project__links"
+              >FrontEnd_Mentor_2ndChallenge</a
+            >
+          </div>
+          <img
+            src="/images/2nd Challenge.png"
+            alt="projects 1"
+            class="projects__img"
+          />
+        </div>
+      </section>
+
+      <section class="clients section section--with-bg" id="clients">
+        <h2 class="h2-heading">
+          What My <br />
+          Client Says
+        </h2>
+        <div class="clients-opinions">
+          <div class="clients__Wrapper">
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
+              exercitationem, distinctio debitis pariatur voluptates tenetur
+              dicta, at aperiam possimus officia minus vitae. Officiis aliquid
+              adipisci nemo rem facere architecto vitae?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+              qui sint quisquam fuga facere a veniam doloribus, saepe distinctio
+              ab perferendis quam dignissimos! Accusantium obcaecati ratione
+              officia ad beatae consequatur!
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum
+              voluptates aperiam excepturi cupiditate minus suscipit maxime
+              temporibus nihil quod, omnis nesciunt eveniet fuga doloribus
+              quaerat vitae ea ipsa est.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div>
+          <p class="contact__description">
+            Feel Free to reach me any time, I prefer to talk over email
+            ,espicially sincewe may be a few time zones away
+          </p>
+          <a
+            target="_blank"
+            href="mailto:am5522031@gmail.com"
+            class="contact__email"
+            >am5522031@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a target="_blank" href="" class="contact__social">
+              <img src="/images/brand/facebook.svg" alt="icon of facebook" /></a
+            ><a target="_blank" href="" class="contact__social"
+              ><img src="/images/brand/twitter.svg" alt="icon of twitter" /></a
+            ><a
+              target="_blank"
+              href="https://www.linkedin.com/in/ahmed-medhat-3151231b7/"
+              class="contact__social"
+              ><img
+                src="/images/brand/LinkedIn.svg"
+                alt="icon of linkidin" /></a
+            ><a
+              target="_blank"
+              href="https://github.com/ahmed0165"
+              class="contact__social"
+              ><img src="/images/brand/github.svg" alt="icon of github"
+            /></a>
+          </div>
+        </div>
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+            let's Work <br />
+            Toghether!
+          </h2>
+
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                name="full name"
+                class="contact__input"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="tel"
+                name="telephone"
+                class="contact__input"
+                placeholder="Phone No."
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
+            </div>
+            <textarea
+              name="description"
+              id="description"
+              rows="1"
+              class="contact__input contact__area"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" class="contact__button" value="Send Message" />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">© 2023 by Ahmed Medhat</footer>
     </div>
   </body>
 </html>
