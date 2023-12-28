@@ -15,6 +15,13 @@
   <body>
     <div class="container">
       <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input type="checkbox" class="burger-menu__checkbox" id="menu" />
+
         <img src="./assets/Logo.png" alt="logo" class="logo" />
         <nav class="nav">
           <ul class="nav__list">
@@ -211,8 +218,8 @@
           you move <br />
           locations.
         </p>
-        <img src="./assets/Huge Global.png" alt="huge global" />
-        <img src="./assets/Sponsored.png" alt="" />
+        <img src="./assets/Huge Global.png" alt="huge global" class="img-1" />
+        <img src="./assets/Sponsored.png" alt="sponser image" class="img-2" />
       </section>
 
       <section class="testimonials" id="testimonials">
@@ -226,7 +233,7 @@
           pleasure when using this crazy feature.
         </p>
         <div class="cards">
-          <div class="card">
+          <div class="card Viezh">
             <div class="card__heading">
               <div class="card__informations">
                 <img src="./assets/Ellipse 175.png" alt="Viezh Robert photo" />
@@ -292,6 +299,22 @@
               virtual private network that has high security.”.
             </div>
           </div>
+          <img src="./assets/Group 1300.svg" alt="slider" class="slider" />
+        </div>
+        <!-- <div class="radios">
+          <input type="radio" name="slider" id="slide1" class="radio" />
+          <input type="radio" name="slider" id="slide2" class="radio" />
+          <input type="radio" name="slider" id="slide3" class="radio" />
+        </div>
+        <div class="slider-controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div> -->
+
+        <div class="buttons">
+          <button class="right__button"><a>←</a></button>
+          <button class="left__button"><a>→</a></button>
         </div>
       </section>
 
@@ -308,7 +331,7 @@
         <button>Subscribe Now</button>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="help">
         <div class="footer__content">
           <img src="./assets/Logo.png" alt="logo" />
           <p class="content">
@@ -327,7 +350,7 @@
           <span>©2020LaslesVPN</span>
         </div>
         <div class="footer__lists">
-          <div class="product">
+          <div class="product list">
             <h2 class="header__product">Product</h2>
             <ul class="list">
               <li>Download</li>
@@ -338,7 +361,7 @@
               <li>Blog</li>
             </ul>
           </div>
-          <div class="engage">
+          <div class="engage list">
             <h2 class="header__product">Engage</h2>
             <ul class="list">
               <li>LaslesVPN ?</li>
@@ -349,7 +372,7 @@
               <li>Terms of Service</li>
             </ul>
           </div>
-          <div class="earn-money">
+          <div class="earn-money list">
             <h2 class="header__product">Earn Money</h2>
             <ul class="list">
               <li>Affiliate</li>
