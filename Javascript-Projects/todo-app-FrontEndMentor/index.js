@@ -192,7 +192,7 @@ const loadTasksFromLocalStorage = () => {
       task.text
     }</span>
       </div>
-      <img src="/images/icon-cross.svg" class="cross-icon" alt="cross-icon" />
+      <img src="./images/icon-cross.svg" class="cross-icon" alt="cross-icon" />
     </li>`;
 
     taskBarContainerElement.insertAdjacentHTML("afterbegin", markUp);

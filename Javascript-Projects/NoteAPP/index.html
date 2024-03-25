@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="menu-side">
+        <button class="arrow__button__menu">></button>
+        <button class="menu__img"></button>
+        <h1 class="logo">Almdrasa-Notes</h1>
+        <button class="search__img"></button>
+        <input class="search__bar" type="text" placeholder="search" />
+        <div class="menu">
+          <button class="note__button menu__header menu__button">Notes</button>
+          <button class="Add__button menu__button">Add Notes</button>
+        </div>
+      </aside>
+      <aside class="acrchive">
+        <button class="arrow__button"><</button>
+        <h1 class="archive__header">PINNED</h1>
+        <ul class="pinnedNotes">
+          <!-- <li class="note">
+            <div class="note__content">
+              <h1 class="note__content__header">
+                pinned elements Business Partners Work at Modern Office
+              </h1>
+              <p class="note__content__p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+                arcu dui.
+              </p>
+              <div class="note__footer">
+                <span class="date">Feb 8, 2021</span>
+                <button class="delete">Delete</button>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+
+        <div class="note__header">Notes</div>
+        <ul class="notes">
+          <!-- <li class="note">
+            <div class="note__content">
+              <h1 class="note__content__header">
+                note element Business Partners Work at Modern Office
+              </h1>
+              <p class="note__content__p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+                arcu dui.
+              </p>
+              <div class="note__footer">
+                <span class="date">Feb 8, 2021</span>
+                <button class="delete">Delete</button>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </aside>
+      <section class="body">
+        <!-- <h1 class="body__header">Business Partners Work at Modern Office</h1>
+        <div class="body__date">
+          <span class="date">Feb 8, 2021/by Ahmed</span>
+        </div>
+        <div class="body__content">
+          <div class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
+            dui. Lorem ipsum dolor sit amet, consectetur adipisce placerat
+            mauris nisl. Proin vitae urna eu sem pellentesque laoreet.
+          </div>
+          <div class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
+            dui. Lorem ipsum dolor sit amet, consectetur adipisce placerat
+            mauris nisl. Proin vitae urna eu sem pellentesque laoreet.
+          </div>
+          <div class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
+            dui. Lorem ipsum dolor sit amet, consectetur adipisce placerat
+            mauris nisl. Proin vitae urna eu sem pellentesque laoreet.
+          </div>
+          <div class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
+            dui. Lorem ipsum dolor sit amet, consectetur adipisce placerat
+            mauris nisl. Proin vitae urna eu sem pellentesque laoreet.
+          </div>
+        </div> -->
+        <button class="add__button__body">+</button>
+      </section>
+      <section class="AddPage AddPageModal">
+        <h1 class="page__header">Add Note</h1>
+        <div class="page__Form">
+          <label for="title">Title*</label>
+          <input type="text" name="title" id="title" class="title" />
+          <label for="author">Author*</label>
+          <input type="text" name="author" id="author" class="author" />
+          <label for="note">Your Note*</label>
+          <textarea
+            name="note"
+            id="note"
+            class="note__input"
+            cols="30"
+            rows="8"
+          ></textarea>
+          <div class="buttons">
+            <button class="addNote">Add Note</button>
+            <button class="addPinnedNote">Add Pinned Note</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <script src="./addPage.js  " type="module"></script> -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
